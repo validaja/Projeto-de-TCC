@@ -1,9 +1,13 @@
-<<?php 
-define('HOST', '127.0.0.1');
-define('USUARIO','root');
-define('SENHA', 'validaja');
-define('DB','login');
+<?php
+$host="localhost";
+$bd="projeto";
+$user="root";
+$pass="";
 
-$conexao = mysqli_connect(HOST, USUARIO, SENHA, DB) or die ('Não foi possível conectar ao servidor');
+// conexão e seleção do banco de dados
+$conexao = mysqlI_connect($host, $user, $pass, $bd) or die("alha ao conectar");
+ 
+// executa a consulta
+//$conexao = "select *from aluno where nome ='$username' and senha='$password'";
 
-?>
+
